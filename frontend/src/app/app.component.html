@@ -1,4 +1,5 @@
 <app-header-view *ngIf="!isIndexPage && locale.langPack"></app-header-view>
+<app-lang-panel *ngIf="locale.langPack"></app-lang-panel>
 <main *ngIf="locale.langPack" [ngClass]="{'fullPage': isIndexPage, 'withHead': !isIndexPage}">
     <router-outlet></router-outlet>
 </main>

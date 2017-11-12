@@ -1,0 +1,3 @@
+<div id="langPanel" class="flexColumn centerContent">
+    <span *ngFor="let lang of locale.availableLang" class="plain-regular" [style.color]="(lang === locale.currentLang)? 'white': ''" (click)="changeLang(lang)">{{lang}}</span>
+</div>

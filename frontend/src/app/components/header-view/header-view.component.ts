@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { LocalizationService } from '../../services/localization.service'
 
 @Component({
     selector: 'app-header-view',
@@ -7,5 +8,9 @@ import { Router } from '@angular/router';
     styleUrls: ['./header-view.component.scss']
 })
 export class HeaderViewComponent implements OnInit {
-    ngOnInit() {}
+
+    constructor(public locale: LocalizationService) {}
+
+    ngOnInit() {
+    }
 }

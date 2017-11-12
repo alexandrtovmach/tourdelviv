@@ -12,8 +12,14 @@ body {
 
 app-header-view {
     width: 100%;
-    height: 100px;
     display: flex;
+}
+
+app-lang-panel {
+    position: fixed;
+    left: 0;
+    top: 20vh;
+    z-index: 5;
 }
 
 main  {
