@@ -1,5 +1,9 @@
 {
     "BRANDNAME": "TOUR de LVIV",
     "BRANDCREDO": "such as you!",
-    "INDEX->START-TRAVEL-BTN": "Let's trip"
+    "INDEX->START-TRAVEL-BTN": "Let's trip",
+    "INDEX->WHERE-YOU-WANT": "Where do you want to travel?",
+    "WORLD": "World",
+    "LVIV": "Lviv",
+    "UKRAINE": "Ukraine"
 }

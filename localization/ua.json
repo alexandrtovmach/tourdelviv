@@ -1,5 +1,9 @@
 {
     "BRANDNAME": "ТУР де ЛЬВІВ",
     "BRANDCREDO": "такий як ти!",
-    "INDEX->START-TRAVEL-BTN": "В подорож"
+    "INDEX->START-TRAVEL-BTN": "В подорож",
+    "INDEX->WHERE-YOU-WANT": "Куди Ви бажаєте поїхати?",
+    "WORLD": "Світ",
+    "LVIV": "Львів",
+    "UKRAINE": "Україна"
 }

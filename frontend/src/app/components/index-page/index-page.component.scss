@@ -5,7 +5,7 @@ section {
     width: 100%;
     height: 100%;
 
-    &#bgGallery {
+    &:nth-child(1) {
         background-attachment: fixed;
         background-position: center center;
         background-size: cover;
@@ -88,6 +88,68 @@ section {
                 background-position-x: center;
                 background-repeat: no-repeat;
             }
+        }
+    }
+    &:nth-child(2) {
+        hr {
+            width: 90%;
+        }
+        .ways {
+            >div {
+                width: 200px;
+                height: 200px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                border-radius: 50%;                
+                background-image: url('../../../globalStyles/resources/tourdelviv_sprite.png');
+                background-repeat: no-repeat;
+                background-position-y: -200px;
+                color: $color-dark;
+                transition: 0.5s;
+                >span {
+                    margin-bottom: 20px;
+                    z-index: 1;
+                }
+                &:hover {
+                    box-shadow: 0 0 5px $color-dark;
+                }
+            }
+            &>div:nth-child(1) {
+                background-position-x: 0;
+            }
+            &>div:nth-child(2) {
+                background-position-x: -200px;
+            }
+            &>div:nth-child(3) {
+                background-position-x: -400px;
+            }
+            >div>div {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                border-radius: 50%; 
+                background-image: url('../../../globalStyles/resources/tourdelviv_sprite.png');
+                background-repeat: no-repeat;
+                background-color: $color-main;
+                background-position-y: 0px;
+                opacity: 0;
+                transition: 1s;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+            &>div:nth-child(1)>div {
+                background-position-x: 0;
+            }
+            &>div:nth-child(2)>div {
+                background-position-x: -200px;
+            }
+            &>div:nth-child(3)>div {
+                background-position-x: -400px;
+            }
+            
         }
     }
 }
