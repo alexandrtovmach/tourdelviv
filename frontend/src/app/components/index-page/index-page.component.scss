@@ -29,24 +29,31 @@ section {
                 }
                 .maininfotitle {
                     width: 0;
-                    padding: 3vw 0 3vw 0;
+                    padding: 2.75vw 0;
                     white-space: nowrap;
                     overflow: hidden;
                     color: white;
                     text-shadow: 2px 2px 5px black;
                     animation: showTextRight 2s 1s forwards;
                     .brandname {
-                        font-family: "Kurale-Regular";
-                        font-size: 5.5vw;
                     }
                     .credo {
-                        font-size: 3vw;
                         margin-top: .5vw;
                         transform-origin: 0 0;
                         transform: rotateX(-90deg);
                         animation: showTextDown 1s 3s forwards;
                     }
                 }
+            }
+            #map-icon {
+                width: 30px;
+                height: 30px;
+                margin-left: 10px;
+                transition: 1s;
+                background-image: url('../../../globalStyles/resources/map.svg');
+                background-size: 80%;
+                background-position-x: center;
+                background-repeat: no-repeat;
             }
         }
     }

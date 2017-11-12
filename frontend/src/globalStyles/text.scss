@@ -4,3 +4,69 @@
 
 @include font-face(Kurale-Regular, '../globalStyles/resources/fonts/Kurale/Kurale-Regular', null, null, ttf);
 
+.h2 {
+    font-family: 'Kurale-Regular';
+    font-size: 5.5vw;
+    @include medium {
+        font-size: 40px;
+    }
+    @include small {
+        font-size: 40px;
+    }
+}
+.h3 {
+    font-family: 'Kurale-Regular';
+    font-size: 3.5vw;
+    @include medium {
+        font-size: 30px;
+    }
+    @include small {
+        font-size: 30px;
+    }
+}
+.h2-alt {
+    font-family: 'Comfortaa-Regular';
+    font-size: 5.5vw;
+    @include medium {
+        font-size: 40px;
+    }
+    @include small {
+        font-size: 40px;
+    }
+}
+.h3-alt {
+    font-family: 'Comfortaa-Regular';
+    font-size: 3.5vw;
+    @include medium {
+        font-size: 30px;
+    }
+    @include small {
+        font-size: 30px;
+    }
+}
+.plain-bold {
+    font-family: 'Comfortaa-Bold';
+    font-size: 20px;
+}
+.plain-regular {
+    font-family: 'Comfortaa-Regular';
+    font-size: 20px;
+}
+.plain-light {
+    font-family: 'Comfortaa-Light';
+    font-size: 20px;
+}
+.accent-bold {
+    font-family: 'Comfortaa-Bold';
+    font-size: 25px;
+}
+.accent-regular {
+    font-family: 'Comfortaa-Regular';
+    font-size: 25px;
+}
+.accent-light {
+    font-family: 'Comfortaa-Light';
+    font-size: 25px;
+}
+
+
