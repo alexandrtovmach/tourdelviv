@@ -1,0 +1,31 @@
+@import '../globalStyles/mixins.scss';
+@import '../globalStyles/reset.scss';
+@import '../globalStyles/position.scss';
+@import '../globalStyles/text.scss';
+
+
+body {
+    font-family: 'Comfortaa-Regular';
+}
+
+app-header-view {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+main  {
+    width: 100%;
+    > router-outlet + * {
+        width: 100%;
+        height: 100%;
+    }
+
+    &.withHead {
+        height: calc(100vh - 100px);
+    }
+
+    &.fullPage {
+        height: 100vh;
+    }
+}
