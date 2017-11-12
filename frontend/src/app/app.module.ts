@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpService } from './services/http.service';
 import { AuthService } from './services/auth.service';
 import { WindowObj } from './services/window.service';
+import { LocalizationService } from './services/localization.service';
+import { ToasterService } from './services/toastr.service';
 
 // components
 import { AppComponent } from './app.component';
@@ -29,6 +31,8 @@ import { HeaderViewComponent } from './components/header-view/header-view.compon
         HttpService,
         WindowObj,
         AuthService,
+        LocalizationService,
+        ToasterService,
     ],
     bootstrap: [AppComponent]
 

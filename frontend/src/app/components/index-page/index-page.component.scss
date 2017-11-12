@@ -9,25 +9,44 @@ section {
         background-position: center center;
         background-size: cover;
         animation: bgChanger 300s infinite;
-        .maininfo {
+        .shadowWrap {
             width: 100%;
             height: 100%;
             background-color: rgba(0,0,0,0.5);
-            .maininfotitle {
-                margin-left: 20px;
-                font-size: 80px;
-                color: white;
-                text-shadow: 2px 2px 5px black;
-            }
-            .maininfologo {
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-                background-image: url('../../../globalStyles/resources/logo.png');
-                background-size: 80%;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-color: rgba(255,255,255,0.8);
+            .maininfo {
+                width: 50vw;
+                height: 15vw;
+                .maininfologo {
+                    width: 15vw;
+                    height: 15vw;
+                    border-radius: 50%;
+                    background-image: url('../../../globalStyles/resources/logo.png');
+                    background-size: 80%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: rgba(255,255,255,0.8);
+                    animation: showLogoLeft 2s forwards;
+                }
+                .maininfotitle {
+                    width: 0;
+                    padding: 3vw 0 3vw 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    color: white;
+                    text-shadow: 2px 2px 5px black;
+                    animation: showTextRight 2s 1s forwards;
+                    .brandname {
+                        font-family: "Kurale-Regular";
+                        font-size: 5.5vw;
+                    }
+                    .credo {
+                        font-size: 3vw;
+                        margin-top: .5vw;
+                        transform-origin: 0 0;
+                        transform: rotateX(-90deg);
+                        animation: showTextDown 1s 3s forwards;
+                    }
+                }
             }
         }
     }

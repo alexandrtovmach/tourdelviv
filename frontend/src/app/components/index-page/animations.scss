@@ -60,3 +60,32 @@
         background-image: url('../../../globalStyles/resources/index_bg/cover1.jpg');
     }
 }
+@keyframes showLogoLeft {
+    0% {
+        opacity: 0;
+        margin-left: calc(50vw/2 - 15vw/2)
+    }
+    50% {
+        opacity: 1;
+        margin-left: calc(50vw/2 - 15vw/2)
+    }
+    100% {
+        margin-left: 0
+    }
+}
+@keyframes showTextRight {
+    50% {
+        width: 0px;
+    }
+    100% {
+        width: 35vw;
+    }
+}
+@keyframes showTextDown {
+    50% {
+        transform: rotateX(-90deg)
+    }
+    100% {
+        transform: rotateX(0deg)
+    }
+}

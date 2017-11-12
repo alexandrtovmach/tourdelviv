@@ -1,6 +1,5 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { LocalizationService } from '../../services/localization.service';
 
 @Component({
     selector: 'app-index-page',
@@ -9,11 +8,9 @@ import { Router } from '@angular/router';
 })
 export class IndexPageComponent implements OnInit {
 
-    ngOnInit() {
-        this.bgChangerInit(document.getElementById('bgGallery'));
+    constructor(public locale: LocalizationService) {
+
     }
 
-    bgChangerInit(elem) {
-        
-    }
+    ngOnInit() {}
 }

@@ -39,11 +39,19 @@ app.use(blockUserAgentMiddleware);
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.all('*', (req, res, next) => {
+	if (!req.url.includes('/dist')) {
+	  console.log('\n\n===url===\n', req.url, '\n===url===\n\n')
+	}
+	next()
+})
+
 //middleware for checking authorized user (if auth { next() } else { redirect to '/'})
 app.use('/profile/*', isLogged);
 
 app.use('/dist', express.static(path.resolve(__dirname + '/../dist')));
 app.use('/resources', express.static(path.resolve(__dirname + '/../resources')));
+app.use('/langpack', express.static(path.resolve(__dirname + '/../localization')));
 
 app.use(bodyParser.json({limit: '5mb'}));
 app.use(bodyParser.urlencoded({extended: false}));
