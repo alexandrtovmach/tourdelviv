@@ -1,4 +1,5 @@
 @import './animations.scss';
+@import '../../../globalStyles/variables.scss';
 
 section {
     width: 100%;
@@ -14,8 +15,22 @@ section {
             height: 100%;
             background-color: rgba(0,0,0,0.5);
             .maininfo {
-                width: 50vw;
+                width: 51vw;
                 height: 15vw;
+                @include large {
+                    width: 520px;
+                    height: 150px;
+                }
+                @include medium {
+                    flex-direction: column;
+                    width: auto;
+                    height: auto;
+                }
+                @include small {
+                    flex-direction: column;
+                    width: auto;
+                    height: auto;
+                }
                 .maininfologo {
                     width: 15vw;
                     height: 15vw;
@@ -25,7 +40,18 @@ section {
                     background-repeat: no-repeat;
                     background-position: center;
                     background-color: rgba(255,255,255,0.8);
-                    animation: showLogoLeft 2s forwards;
+                    @include large {
+                        width: 150px;
+                        height: 150px;
+                    }
+                    @include medium {
+                        width: 150px;
+                        height: 150px;
+                    }
+                    @include small {
+                        width: 150px;
+                        height: 150px;
+                    }
                 }
                 .maininfotitle {
                     width: 0;
@@ -34,14 +60,21 @@ section {
                     overflow: hidden;
                     color: white;
                     text-shadow: 2px 2px 5px black;
-                    animation: showTextRight 2s 1s forwards;
+                    animation: showTextRight 2s forwards;
+                    @include medium {
+                        display: none;
+                    }
+                    @include small {
+                        display: none;
+                    }
                     .brandname {
+                        
                     }
                     .credo {
                         margin-top: .5vw;
                         transform-origin: 0 0;
                         transform: rotateX(-90deg);
-                        animation: showTextDown 1s 3s forwards;
+                        animation: showTextDown 1s 2s forwards;
                     }
                 }
             }
