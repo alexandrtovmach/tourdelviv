@@ -102,18 +102,16 @@ section {
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
-                border-radius: 50%;                
+                margin: 0 20px;
                 background-image: url('../../../globalStyles/resources/tourdelviv_sprite.png');
                 background-repeat: no-repeat;
                 background-position-y: -200px;
                 color: $color-dark;
-                transition: 0.5s;
+                cursor: pointer;
+                transition: 1s;
                 >span {
                     margin-bottom: 20px;
                     z-index: 1;
-                }
-                &:hover {
-                    box-shadow: 0 0 5px $color-dark;
                 }
             }
             &>div:nth-child(1) {
@@ -129,10 +127,8 @@ section {
                 width: 100%;
                 height: 100%;
                 position: absolute;
-                border-radius: 50%; 
                 background-image: url('../../../globalStyles/resources/tourdelviv_sprite.png');
                 background-repeat: no-repeat;
-                background-color: $color-main;
                 background-position-y: 0px;
                 opacity: 0;
                 transition: 1s;

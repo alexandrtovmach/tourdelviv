@@ -1,5 +1,5 @@
 module.exports = {
-	dbname: 'newproj',
+	dbname: 'tourdelviv',
 	uri: 'mongodb://localhost:27017',
 	mocked_db: false,
 	opts: {

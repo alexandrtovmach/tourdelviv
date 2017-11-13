@@ -14,9 +14,14 @@ export class LocalizationService {
     constructor(private httpService: HttpService) {}
 
     initLocal(lang?) {
+        const localStorageLang = localStorage.getItem('tourdeLvivLang');
         if (lang) {
             this.currentLang = lang
             return this.sendReq(lang)
+        }
+        if (localStorageLang) {
+            this.currentLang = localStorageLang;
+            return this.sendReq(localStorageLang)
         }
         if (!window.navigator.language) {
             if (window.navigator.languages && window.navigator.languages[1]) {
@@ -31,10 +36,11 @@ export class LocalizationService {
     }
 
     sendReq(lang) {
-        lang = this.availableLang.includes(lang)? lang: 'ua';
+        lang = this.availableLang.includes(lang)? lang: 'en';
         this.httpService.sendRequest({ method: 'GET', url: `/langpack/${lang}.json` })
             .then((langPack) => {
                 this.langPack = langPack;
+                localStorage.setItem('tourdeLvivLang', this.currentLang);
             })
             .catch((err) => {
                 console.error(err);
