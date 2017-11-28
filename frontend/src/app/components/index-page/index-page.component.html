@@ -14,38 +14,31 @@
     </div>
 </section>
 <section class="centerContent flexColumn">
-    <h2 class="h2 textAlignCenter">{{locale.langPack['INDEX->WHERE-YOU-WANT']}}</h2>
-    <hr>
-    <div class="ways centerContent flexWrap">
-        <div class="accent-regular">
-            <span>{{locale.langPack['WORLD']}}</span>
-            <div></div>
-        </div>
-        <div class="accent-regular">
-            <span>{{locale.langPack['LVIV']}}</span>
-            <div></div>
-        </div>
-        <div class="accent-regular">
-            <span>{{locale.langPack['UKRAINE']}}</span>
-            <div></div>
+    <div class="shadowWrap centerContent flexColumn">
+        <h2 class="h2 textAlignCenter">{{locale.langPack['INDEX->WHERE-YOU-WANT']}}</h2>
+        <hr>
+        <div class="ways centerContent flexWrap">
+            <div class="accent-regular">
+                <span>{{locale.langPack['WORLD']}}</span>
+                <div></div>
+            </div>
+            <div class="accent-regular">
+                <span>{{locale.langPack['LVIV']}}</span>
+                <div></div>
+            </div>
+            <div class="accent-regular">
+                <span>{{locale.langPack['UKRAINE']}}</span>
+                <div></div>
+            </div>
         </div>
     </div>
 </section>
 <section class="centerContent flexColumn">
-    <h2 class="h2 textAlignCenter">{{locale.langPack['INDEX->WHERE-YOU-WANT']}}</h2>
-    <hr>
-    <div class="ways centerContent flexWrap">
-        <div class="accent-regular">
-            <span>{{locale.langPack['WORLD']}}</span>
-            <div></div>
-        </div>
-        <div class="accent-regular">
-            <span>{{locale.langPack['LVIV']}}</span>
-            <div></div>
-        </div>
-        <div class="accent-regular">
-            <span>{{locale.langPack['UKRAINE']}}</span>
-            <div></div>
+    <div class="shadowWrap centerContent flexColumn">
+        <h2 class="h2 textAlignCenter">{{locale.langPack['HOTTRAVELS']}}</h2>
+        <hr>
+        <div class="hotTours centerContent">
+            <div *ngFor="let tour of hotTours" class="tour centerContent">{{tour}}</div>
         </div>
     </div>
 </section>

@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Comfortaa-Regular';
+    color: $color-dark;
 }
 
 app-header-view {
@@ -30,10 +31,13 @@ main  {
     }
 
     &.withHead {
-        height: calc(100vh - 100px);
+        min-height: calc(100vh - 100px);
     }
 
     &.fullPage {
-        height: 100vh;
+        min-height: 100vh;
     }
+}
+footer {
+    width: 100%;
 }

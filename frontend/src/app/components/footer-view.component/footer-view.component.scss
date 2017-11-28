@@ -1,0 +1,28 @@
+#footer {
+    width: 100%;
+    height: 200px;
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(87,53,36), rgb(37,23,16));
+
+    >div {
+        flex: 0 0 30%;
+    }
+
+    .infoBlock {
+        h3 {
+            margin: 30px auto;
+        }
+        a {
+            margin: 5px 10px;
+            opacity: 0.5;
+            transition: 0.5s;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .contactsBlock {
+
+    }
+}

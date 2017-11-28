@@ -3,3 +3,6 @@
 <main *ngIf="locale.langPack" [ngClass]="{'fullPage': isIndexPage, 'withHead': !isIndexPage}">
     <router-outlet></router-outlet>
 </main>
+<footer>
+    <app-footer-view></app-footer-view>
+</footer>

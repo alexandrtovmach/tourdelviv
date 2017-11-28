@@ -7,10 +7,9 @@ import { LocalizationService } from '../../services/localization.service';
     styleUrls: ['./index-page.component.scss']
 })
 export class IndexPageComponent implements OnInit {
+    hotTours = [1,2,1,2,3,4,1,2,2,4]
 
-    constructor(public locale: LocalizationService) {
-
-    }
+    constructor(public locale: LocalizationService) {}
 
     ngOnInit() {}
 }

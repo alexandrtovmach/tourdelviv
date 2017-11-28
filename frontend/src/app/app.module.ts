@@ -16,6 +16,7 @@ import { ToasterService } from './services/toastr.service';
 import { AppComponent } from './app.component';
 import { IndexPageComponent } from './components/index-page/index-page.component';
 import { HeaderViewComponent } from './components/header-view/header-view.component';
+import { FooterViewComponent } from './components/footer-view.component/footer-view.component';
 import { LangPanelComponent } from './components/lang-panel/lang-panel.component';
 
 @NgModule({
@@ -26,6 +27,7 @@ import { LangPanelComponent } from './components/lang-panel/lang-panel.component
     declarations: [
         AppComponent,
         HeaderViewComponent,
+        FooterViewComponent,
         IndexPageComponent,
         LangPanelComponent,
     ],

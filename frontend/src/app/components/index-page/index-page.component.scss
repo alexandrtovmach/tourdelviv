@@ -3,13 +3,13 @@
 
 section {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    animation: bgChanger 300s infinite;
 
     &:nth-child(1) {
-        background-attachment: fixed;
-        background-position: center center;
-        background-size: cover;
-        animation: bgChanger 300s infinite;
         .shadowWrap {
             width: 100%;
             height: 100%;
@@ -91,61 +91,94 @@ section {
         }
     }
     &:nth-child(2) {
-        hr {
-            width: 90%;
+        height: 50vh;
+        .shadowWrap {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            hr {
+                width: 90%;
+            }
+            .ways {
+                >div {
+                    width: 200px;
+                    height: 200px;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    margin: 0 20px;
+                    background-image: url('../../../globalStyles/resources/tourdelviv_sprite.png');
+                    background-repeat: no-repeat;
+                    background-position-y: -200px;
+                    color: $color-dark;
+                    cursor: pointer;
+                    transition: 1s;
+                    >span {
+                        margin-bottom: 20px;
+                        z-index: 1;
+                    }
+                }
+                &>div:nth-child(1) {
+                    background-position-x: 0;
+                }
+                &>div:nth-child(2) {
+                    background-position-x: -200px;
+                }
+                &>div:nth-child(3) {
+                    background-position-x: -400px;
+                }
+                >div>div {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-image: url('../../../globalStyles/resources/tourdelviv_sprite.png');
+                    background-repeat: no-repeat;
+                    background-position-y: 0px;
+                    opacity: 0;
+                    transition: 1s;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+                &>div:nth-child(1)>div {
+                    background-position-x: 0;
+                }
+                &>div:nth-child(2)>div {
+                    background-position-x: -200px;
+                }
+                &>div:nth-child(3)>div {
+                    background-position-x: -400px;
+                }
+                
+            }
         }
-        .ways {
-            >div {
-                width: 200px;
-                height: 200px;
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
-                margin: 0 20px;
-                background-image: url('../../../globalStyles/resources/tourdelviv_sprite.png');
-                background-repeat: no-repeat;
-                background-position-y: -200px;
-                color: $color-dark;
-                cursor: pointer;
-                transition: 1s;
-                >span {
-                    margin-bottom: 20px;
-                    z-index: 1;
-                }
+    }
+    &:nth-child(3) {
+        .shadowWrap {
+            width: 100%;
+            height: 100%;
+            background-image: url('../../../globalStyles/resources/footer-start.png');
+            background-position: bottom;
+            background-repeat: repeat-x;
+            background-color: rgba(0,0,0,0.5);
+            h2 {
+                color: white;
+                text-shadow: 2px 2px 5px black;
             }
-            &>div:nth-child(1) {
-                background-position-x: 0;
+            hr {
+                width: 90%;
             }
-            &>div:nth-child(2) {
-                background-position-x: -200px;
-            }
-            &>div:nth-child(3) {
-                background-position-x: -400px;
-            }
-            >div>div {
+            .hotTours {
                 width: 100%;
-                height: 100%;
-                position: absolute;
-                background-image: url('../../../globalStyles/resources/tourdelviv_sprite.png');
-                background-repeat: no-repeat;
-                background-position-y: 0px;
-                opacity: 0;
-                transition: 1s;
-                &:hover {
-                    opacity: 1;
+                flex-wrap: wrap;
+                .tour {
+                    flex: 0 0 15vw;
+                    height: 15vw;
+                    margin: 10px;
+                    background-color: $color-alt;
                 }
             }
-            &>div:nth-child(1)>div {
-                background-position-x: 0;
-            }
-            &>div:nth-child(2)>div {
-                background-position-x: -200px;
-            }
-            &>div:nth-child(3)>div {
-                background-position-x: -400px;
-            }
-            
         }
     }
 }
