@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HeaderViewComponent } from './components/header-view/header-view.component';
 import { IndexPageComponent } from './components/index-page/index-page.component';
+import { ProgramLoyalityComponent } from './components/user/programloyality-page.component/programloyality-page.component';
 
 // guards
 import { IsLoggedInGuard } from './guards/is-logged-in.guard';
@@ -14,6 +15,10 @@ const routes: Routes = [
         path: '',
         pathMatch: 'full',
         component: IndexPageComponent,
+    },
+    {
+        path: 'program_loyality',
+        component: ProgramLoyalityComponent
     },
     {
         path: '**',

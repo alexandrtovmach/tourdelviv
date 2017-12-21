@@ -18,6 +18,7 @@ import { IndexPageComponent } from './components/index-page/index-page.component
 import { HeaderViewComponent } from './components/header-view/header-view.component';
 import { FooterViewComponent } from './components/footer-view.component/footer-view.component';
 import { LangPanelComponent } from './components/lang-panel/lang-panel.component';
+import { ProgramLoyalityComponent } from './components/user/programloyality-page.component/programloyality-page.component';
 
 @NgModule({
     imports: [
@@ -30,6 +31,7 @@ import { LangPanelComponent } from './components/lang-panel/lang-panel.component
         FooterViewComponent,
         IndexPageComponent,
         LangPanelComponent,
+        ProgramLoyalityComponent,
     ],
     providers: [
         HttpService,
